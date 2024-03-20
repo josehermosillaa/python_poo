@@ -1,5 +1,5 @@
 from te import Te
-
+# Te.metodo_no_estatico()
 te1 = Te()
 te2 = Te()
 
