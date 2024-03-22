@@ -28,5 +28,12 @@ class Medicamento():
             if self.descuento:
                 self.precio_final*= (1-self.descuento) # 1-0.1 = 0.9
     
+    def __eq__(self, other):
+        return self.nombre.lower() == other.nombre.lower()
+
+    def __iadd__(self, other):
+        if self == other:
+            self.stock += other.stock
+        return self
 
 # paracetamol = Medicamento('paracetamol',10)
