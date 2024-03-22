@@ -47,7 +47,7 @@ class Personaje():
         return int(input(
             f"""Con tu nivel actual, tienes {probabilidad_ganar*100}% de probabilidades
             de ganarle al Orco.
-            Si ganas, ganaras %0 puntos de experiencia y el orco perdera 30.
+            Si ganas, ganaras 50 puntos de experiencia y el orco perdera 30.
             Si pierdes, perderas 30 puntos de experiencia y el orco ganara 50.
             Que deseas hacer?
             1. Atacar
