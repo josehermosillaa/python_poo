@@ -90,8 +90,8 @@ class TiendaFarmacia(Tienda):
                     print(f"el stock disponible es {self.__productos[indice].stock}") #1
                     temporal = self.__productos[indice] - p  #0 
                     nuevo_stock = temporal if temporal > 0 else 0 
-                    self.__productos[indice].stock = nuevo_stoc
-               
+                    self.__productos[indice].stock = nuevo_stock
+
 
 
                     #       if self.__productos[indice].stock >0:
