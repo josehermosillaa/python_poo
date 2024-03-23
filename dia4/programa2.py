@@ -15,7 +15,7 @@ while opcion_ingreso == 1:
 
     if m in ingresados:
         indice = ingresados.index(m)
-        ingresados[indice] += m
+        ingresados[indice] += m #este metodo suma el stock anterio + el nuevo
         ingresado = ingresados[indice]
         print(f""" ********* DATOS DEL MEDICAMENTO {ingresado.nombre} ***********
         PRECIO BRUTO: ${ingresado.precio_bruto}""")
