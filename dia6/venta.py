@@ -3,7 +3,7 @@ class DetalleVentaItem():
         self.__producto = producto
         self.__cantidad = cantidad
 
-    @property
+    @property ## getter obtener un atributo
     def producto(self):
         return self.__producto
     
@@ -29,8 +29,21 @@ class DetalleVenta():
         return f"{retorno}{''.join(items)}"
 
 
-paracetamol = DetalleVentaItem('paracetamol', 100)
-venta1 = DetalleVenta()
-venta1.agregar_item(paracetamol)
+class Venta():
+    def __init__(self):
+        self.__detalle = DetalleVenta()
 
-print(venta1)
+    def modificar_detalle(self, producto:str, cantidad:int):
+        detalle_venta_item = DetalleVentaItem(producto, cantidad)
+        self.__detalle.agregar_item(detalle_venta_item)
+
+    @property
+    def detalle(self):
+        return self.__detalle
+
+
+# paracetamol = DetalleVentaItem('paracetamol', 100)
+# venta1 = DetalleVenta()
+# venta1.agregar_item(paracetamol)
+
+# print(venta1)
