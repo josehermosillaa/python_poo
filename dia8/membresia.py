@@ -42,7 +42,14 @@ class Basica(Membresia):
     costo = 3000
     cantidad_dispositivos = 2
 
+    def __init__(self, correo_suscriptor:str, numero_tarjeta:str):
+        super().__init__(correo_suscriptor, numero_tarjeta)
 
+        if isinstance(self, Familiar) or isinstance(self, SinConexion):
+            self.__dias_regalo = 7
+
+        elif isinstance(self, Pro):
+            self.__dias_regalo = 15
 
     def cancelar_suscripcion(self):
         return Gratis(self.correo_suscriptor, self.numero_tarjeta)
