@@ -76,12 +76,38 @@ class Familiar(Basica):
         pass
     
 
-class SinConexion():
-    pass
+class SinConexion(Basica):
+    costo = 3500
+    cantidad_dispositivos = 2
 
-class Pro():
-    pass
+    def cambiar_suscripcion(self, nueva_membresia:int):
+        if nueva_membresia not in [1,2,4]:
+            return self
+        else:
+            return self._crear_nueva_membresia(nueva_membresia)
+    
+    def incrementar_cantidad_maxima_offline(self):
+        pass
 
-p = Gratis('pepe112@gmail.com', '1234-1234-1234')
-print(p)
-print(p.cambiar_suscripcion(1))
+class Pro(Familiar, SinConexion):
+    costo = 7000
+    cantidad_dispositivos = 6
+
+    def cambiar_suscripcion(self, nueva_membresia:int):
+        if nueva_membresia not in [1,2,3]:
+            return self
+        else:
+            return self._crear_nueva_membresia(nueva_membresia)
+
+g = Gratis("correo@prueba.cl", "123 456 789")
+print(type(g))
+b = g.cambiar_suscripcion(1)
+print(type(b))
+f = b.cambiar_suscripcion(2)
+print(type(f))
+sc = f.cambiar_suscripcion(3)
+print(type(sc))
+pro = sc.cambiar_suscripcion(4)
+print(type(pro))
+g2 = pro.cancelar_suscripcion()
+print(type(g2))
