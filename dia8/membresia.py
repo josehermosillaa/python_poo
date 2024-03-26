@@ -50,7 +50,9 @@ class Basica(Membresia):
 
         elif isinstance(self, Pro):
             self.__dias_regalo = 15
-
+    @property
+    def dias_regalo(self):
+        return self.__dias_regalo
     def cancelar_suscripcion(self):
         return Gratis(self.correo_suscriptor, self.numero_tarjeta)
     #aqui se debe validar que la suscripcion ingresada sea 2,3,4
@@ -66,6 +68,7 @@ class Familiar(Basica):
     cantidad_dispositivos = 5
 
     #aqui se debe validar que la suscripcion ingresada sea 2,3,4
+    
     def cambiar_suscripcion(self, nueva_membresia:int):
         if nueva_membresia not in [1,3,4]:
             return self
@@ -105,9 +108,13 @@ b = g.cambiar_suscripcion(1)
 print(type(b))
 f = b.cambiar_suscripcion(2)
 print(type(f))
+print(f.dias_regalo)
 sc = f.cambiar_suscripcion(3)
 print(type(sc))
+print(sc.dias_regalo)
 pro = sc.cambiar_suscripcion(4)
 print(type(pro))
+print(pro.dias_regalo)
+
 g2 = pro.cancelar_suscripcion()
 print(type(g2))
