@@ -61,8 +61,20 @@ class Basica(Membresia):
             return self._crear_nueva_membresia(nueva_membresia)
     
 
-class Familiar():
-    pass
+class Familiar(Basica):
+    costo = 5000
+    cantidad_dispositivos = 5
+
+    #aqui se debe validar que la suscripcion ingresada sea 2,3,4
+    def cambiar_suscripcion(self, nueva_membresia:int):
+        if nueva_membresia not in [1,3,4]:
+            return self
+        else:
+            return self._crear_nueva_membresia(nueva_membresia)
+    
+    def modificar_control_parental(self):
+        pass
+    
 
 class SinConexion():
     pass
