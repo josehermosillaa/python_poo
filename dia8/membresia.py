@@ -44,12 +44,12 @@ class Basica(Membresia):
 
     def __init__(self, correo_suscriptor:str, numero_tarjeta:str):
         super().__init__(correo_suscriptor, numero_tarjeta)
-
-        if isinstance(self, Familiar) or isinstance(self, SinConexion):
+        if isinstance(self, Pro):
+            self.__dias_regalo = 15
+        elif isinstance(self, Familiar) or isinstance(self, SinConexion):
             self.__dias_regalo = 7
 
-        elif isinstance(self, Pro):
-            self.__dias_regalo = 15
+        
     @property
     def dias_regalo(self):
         return self.__dias_regalo
