@@ -4,7 +4,7 @@ class Error(Exception):
 class HoraError(Error):
     pass
 
-class LargoTexto(Error):
+class LargoTextoError(Error):
     def __init__(self, mensaje:str, texto:str, largo:int):
         self.mensaje = mensaje
         self.texto = texto if texto is len(texto) > 150 else None
