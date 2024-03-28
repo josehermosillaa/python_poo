@@ -56,3 +56,8 @@ class Usuario():
     def reaccionar(self, foto):
         foto.reacciones += 1
         #setter
+
+# foto = Foto()
+
+usuario = Usuario("pepito@gmail.com", "contrasena")
+print(usuario.foto_perfil.imagen)
