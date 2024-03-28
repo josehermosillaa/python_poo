@@ -1,7 +1,7 @@
 from exepcion import EdadError
 
-consultar = True
-while consultar:
+intentos = 0
+while intentos <=3:
     try:
         edad = int(input("Ingrese su edad:\n"))
         #esto es ejercicio 3
@@ -18,3 +18,8 @@ while consultar:
         print(f"ERROR: {e}")
     except:
         print("ERROR SIN INFORMACIÓN")
+    finally:
+        intentos += 1
+        print("El numero de intentos es :", intentos)
+
+    
