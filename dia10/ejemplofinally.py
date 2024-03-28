@@ -18,6 +18,9 @@ while intentos <=3:
         print(f"ERROR: {e}")
     except:
         print("ERROR SIN INFORMACIÓN")
+    #el else se ejecuta solo si no existe ninguna excepcion
+    # else:
+    #     print("No hubieron errores")
     finally:
         intentos += 1
         print("El numero de intentos es :", intentos)
