@@ -1,0 +1,12 @@
+{"nombre":"computador","precio":500000 }
+{"nombre":"celular","precio":1000000 }
+{"nombre":"iguana","precio":300000 }
+{"nombre":"iguana2","precio":300000 }
+{"nombre":"iguana3","precio":300000 }
+{"nombre":"iguana4","precio":300000 }
+{"nombre":"iguana5","precio":300000 }
+{"nombre":"iguana6","precio":300000 }
+{"nombre":"iguana7","precio":300000 }
+{"nombre":"iguana8","precio":300000 }
+{"nombre":"iguana9","precio":300000 }
+{"nombre":"iguana10","precio":300000 }

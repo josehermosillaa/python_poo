@@ -1,0 +1,11 @@
+Había una vez en un pequeño pueblo, un grupo de jóvenes entusiastas se reunió para aprender programación en un curso especial. 
+En la primera clase, conocieron al profesor, un sabio desarrollador llamado Alan, que les enseñaría los secretos del código.
+
+Desde el principio, los estudiantes se sumergieron en el fascinante mundo de la programación. Aprendieron sobre variables, bucles y condicionales, y pronto estaban creando sus propios programas simples. 
+Cada día era una aventura nueva, enfrentando desafíos y resolviendo problemas con ingenio y determinación.
+
+Con el tiempo, el curso se convirtió en más que solo una lección sobre código. Se convirtió en un viaje de auto-descubrimiento y crecimiento personal. 
+Los estudiantes aprendieron a pensar de manera lógica, a trabajar en equipo y a nunca rendirse frente a la adversidad.
+
+Al final del curso, no solo habían dominado la programación, sino que también habían forjado amistades duraderas y una confianza inquebrantable en sus habilidades. 
+Y así, armados con conocimiento y determinación, se lanzaron hacia un futuro brillante lleno de posibilidades infinitas.

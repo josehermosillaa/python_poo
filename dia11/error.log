@@ -1,0 +1,5 @@
+[2024-04-01 21:17:47] Error: invalid literal for int() with base 10: 'c'
+[2024-04-01 21:18:22] Error: invalid literal for int() with base 10: 'sfd'
+[2024-04-01 21:18:26] Error: invalid literal for int() with base 10: 'sdfsdfsdfsd'
+[2024-04-01 21:18:32] Error: invalid literal for int() with base 10: 'hola mundo como esta'
+[2024-04-01 21:18:51] Error: invalid literal for int() with base 10: 'dsf'
