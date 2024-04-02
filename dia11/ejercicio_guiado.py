@@ -31,3 +31,25 @@ for i in instancias:
 # datos = json.load(archivo)
 # archivo.close()
 # print(datos)
+
+""" EJEMPLO PARA DESARROLLAR LA SEGUNDA PARTE DEL DESAFIO"""
+instancias = [] 
+with open("productos.txt") as productos:
+    linea = productos.readline()
+    while linea:
+        try:
+            producto = json.loads(linea) # dict
+            # print(type(producto))
+            instancias.append(Producto(producto.get("nombre"), producto.get("precio")))
+        
+        # instancias.append(Producto(producto["nombre"], producto["precio"]))
+
+            
+        except Exception as e:
+
+            """Buscar codigo para generar el error.log"""
+        finally:
+            linea = productos.readline() #next
+
+for i in instancias:
+    print(i)
