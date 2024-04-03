@@ -1,0 +1,4 @@
+[2024-04-02 21:09:25] Error: Invalid control character at: line 1 column 38 (char 37)
+[2024-04-02 21:09:25] Error: Expecting ',' delimiter: line 2 column 1 (char 37)
+[2024-04-02 21:09:25] Error: Expecting ',' delimiter: line 1 column 20 (char 19)
+[2024-04-02 21:09:25] Error: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
