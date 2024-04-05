@@ -1,11 +1,11 @@
 class Campania():
-    def __init__(self, nombre:str, fecha_inicio:date, fecha_termino:date, anuncios:list):
+    
+    def __init__(self, nombre:str, fecha_inicio:date, fecha_termino:date, anuncios:list) -> None:
         self.__nombre = nombre
         self.__fecha_inicio = fecha_inicio
         self.__fecha_termino = fecha_termino
         self.__anuncios = anuncios #aqui tendre instancias de la clase anuncios y sus hijas Display, sopcial, video
-
-
+        
     def __str__(self):
         cant_video = 0
         cant_display = 0
